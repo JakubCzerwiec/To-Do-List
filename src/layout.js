@@ -1,3 +1,5 @@
+
+
 function renderLeyout () {
     const content = document.getElementById('content');
 
@@ -15,6 +17,8 @@ function renderLeyout () {
     projects.className = 'projects';
     content.appendChild(projects);
 
+
+    
 }
 
 export {renderLeyout}

@@ -1,23 +1,20 @@
+const projects = [];
+const projectFactory = (title, date, priority, description) => {
+    return {title, date, priority, description}
+}
+
 function newProjectCreator () {
-    const projectFactory = (title, date, priority, description) => {
-        return {title, date, priority, description}
-    }
 
-    const  newProjectForm = document.querySelector('.newProject');
-
-    newProjectForm.addEventListener('submit', (e) => {
-        e.preventDefault();
         let projectTitle = document.getElementById('title').value;
         let projectDate = document.getElementById('date').value;
-        let projectPriority = document.getElementById('priority');
-        let projectDescription = document.getElementById('description');
-
+        let projectPriority = document.getElementById('priority').value;
+        let projectDescription = document.getElementById('description').value;
 
         let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription);
 
         projects.push(project);
-        console.log(projects)
-    })
+        console.log(projects);
+
 }
 
-export {newProjectCreator}
+export {newProjectCreator, projects}
