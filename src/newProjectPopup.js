@@ -1,5 +1,6 @@
 import {newProjectCreator} from './newProjectCreator';
-import {drawProjects} from './projectOnScreen'
+import {drawProjects} from './projectOnScreen';
+
 
 function newProjectPopup () {
     const content = document.getElementById('content');
@@ -36,12 +37,14 @@ function newProjectPopup () {
 
     content.appendChild(projectPopup);
 
-    const addNewProject = document.querySelector('.newProject')
-        addNewProject.addEventListener('submit', (e) => {
+    const addNewProject = document.querySelector('.newProject');
+    addNewProject.addEventListener('submit', (e) => {
         e.preventDefault();
         newProjectCreator();
         content.removeChild(projectPopup);
         drawProjects ();
+
+
 });
 
 }

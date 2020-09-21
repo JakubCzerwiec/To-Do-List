@@ -1,6 +1,6 @@
 const projects = [];
-const projectFactory = (title, date, priority, description) => {
-    return {title, date, priority, description}
+const projectFactory = (title, date, priority, description, tasks) => {
+    return {title, date, priority, description, tasks}
 }
 
 function newProjectCreator () {
@@ -9,8 +9,9 @@ function newProjectCreator () {
         let projectDate = document.getElementById('date').value;
         let projectPriority = document.getElementById('priority').value;
         let projectDescription = document.getElementById('description').value;
+        let projectTasks = [];
 
-        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription);
+        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks);
 
         projects.push(project);
         console.log(projects);
