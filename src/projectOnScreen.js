@@ -11,7 +11,7 @@ function drawProjects () {
         let proj = document.createElement('div');
         proj.className = 'project';
 
-        proj.innerHTML = `${projects[i].title}, ${projects[i].date}, ${projects[i].priority}, ${projects[i].description} <div class="addTask">Add Task</div>`
+        proj.innerHTML = `${projects[i].title}, ${projects[i].date}, ${projects[i].priority}, ${projects[i].description}, ${projects[i].tasks} <div class="addTask">Add Task</div>`
 
         projectsDiv.appendChild(proj);
 
@@ -19,12 +19,18 @@ function drawProjects () {
 
     const addTaskDiv = document.querySelectorAll('.addTask');
 
-    addTaskDiv.forEach(btn => {
+   /* addTaskDiv.forEach(btn => {
         btn.addEventListener('click', () => {
             newTaskPopup()
         })
     })
+    */
 
+    addTaskDiv.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+            projects[index].taskCreator;
+        })
+    })
 
 }
 

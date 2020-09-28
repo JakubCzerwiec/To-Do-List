@@ -1,6 +1,10 @@
+
+
+import {newTaskPopup} from './newTaskPopup';
+
 const projects = [];
 const projectFactory = (title, date, priority, description, tasks) => {
-    return {title, date, priority, description, tasks}
+    return {title, date, priority, description, tasks};
 }
 
 function newProjectCreator () {
@@ -10,8 +14,9 @@ function newProjectCreator () {
         let projectPriority = document.getElementById('priority').value;
         let projectDescription = document.getElementById('description').value;
         let projectTasks = [];
+        const taskCreator = newTaskPopup();
 
-        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks);
+        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks, taskCreator);
 
         projects.push(project);
         console.log(projects);
