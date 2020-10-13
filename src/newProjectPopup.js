@@ -10,7 +10,7 @@ function newProjectPopup () {
     projectPopup.className = 'projectPopup';
     projectPopup.innerHTML = `<div class="newProjectPopup">
                                 <form class="newProject">
-                                    <label >Title</label>
+                                    <label>Title</label>
                                     <input type="text" id="title" name="title" placeholder="Insert title" required>
 
                                     <label >Date</label>
@@ -26,7 +26,7 @@ function newProjectPopup () {
                                     </select>
 
                                     <label >Description</label>
-                                    <input type="textarea" id="description" name="description"  required>
+                                    <input type="textarea" id="descriptionProject" name="description" rows="4" cols="50" required>
 
                                     <input type="submit" id="add" value="Create New Project">
 

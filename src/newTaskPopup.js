@@ -27,7 +27,7 @@ function newTaskPopup () {
                                     </select>
 
                                     <label >Description</label>
-                                    <input type="textarea" id="descriptionTask" name="description"  required>
+                                    <input type="textarea" id="descriptionTask" name="description" rows="10" cols="50" required>
 
                                     <input type="submit" id="addTask" value="Create New Task">
 

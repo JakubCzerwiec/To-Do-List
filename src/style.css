@@ -1,4 +1,69 @@
-body {
-    background-color: gray;
+/* General settings */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
 }
 
+
+body {
+    background-color: green;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.plusBtn {
+    width: max-content;
+    margin: auto;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/* Project Popup */
+
+.projectPopup {
+    width: 90%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+    background-color: greenyellow;
+}
+
+.newProject {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+label {
+    padding: .5em;
+}
+
+input, select {
+    padding: .5em;
+}
+
+#descriptionProject {
+    height: 4em;
+}
+
+#add {
+    width: max-content;
+    padding: 1em;
+    margin: 1em auto;
+}
