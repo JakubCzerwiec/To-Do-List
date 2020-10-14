@@ -41,7 +41,7 @@ body {
     top: 50%;
     transform: translate(-50%, -70%);
     z-index: 2;
-    background-color: greenyellow;
+    background-color: grey;
 }
 
 .newProject {
@@ -66,4 +66,49 @@ input, select {
     width: max-content;
     padding: 1em;
     margin: 1em auto;
+}
+
+/* Task Popup */
+
+.taskPopup {
+    width: 90%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 2;
+    background-color: grey;
+}
+
+.newTask {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#addTask {
+    width: max-content;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+/* Projects on screen */
+
+.projects {
+    width: 90%;
+    margin: auto;
+}
+
+.projects p {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.project {
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
 }

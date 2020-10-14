@@ -11,7 +11,42 @@ function drawProjects () {
         let proj = document.createElement('div');
         proj.className = 'project';
 
-        proj.innerHTML = `${projects[i].title}, ${projects[i].date}, ${projects[i].priority}, ${projects[i].description}, ${projects[i].tasks} <div class="addTask">Add Task</div>`
+        let projTitle = document.createElement('div');
+        projTitle.className = 'projTitle';
+        projTitle.innerHTML = `<p>Title:</p> ${projects[i].title}`;
+
+        proj.appendChild(projTitle);
+
+
+        let projDate = document.createElement('div');
+        projDate.className = 'projDate';
+        projDate.innerHTML = `<p>Date:</p> ${projects[i].date}`;
+
+        proj.appendChild(projDate);
+
+
+        let projPriority = document.createElement('div');
+        projPriority.className = 'projPriority';
+        projPriority.innerHTML = `<p>Priority:</p> ${projects[i].priority}`;
+
+        proj.appendChild(projPriority);
+
+
+        let projDescr = document.createElement('div');
+        projDescr.className = 'projDescr';
+        projDescr.innerHTML = `<p>Description:</p> ${projects[i].description}`;
+
+        proj.appendChild(projDescr);
+
+
+        let addTaskDiv = document.createElement('div');
+        addTaskDiv.className = 'addTaskDiv';
+        addTaskDiv.innerText = 'Add Task';
+
+        proj.appendChild(addTaskDiv);
+
+
+        
 
         projectsDiv.appendChild(proj);
 
