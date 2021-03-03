@@ -2,7 +2,14 @@
 
 import {newTaskPopup} from './newTaskPopup';
 
-const projects = [];
+let projects = [{
+    title: 'Example', 
+    date: '12/03/2021', 
+    priority: 'Medium', 
+    description: 'Stuff to do', 
+    tasks: ['Nothing for now']
+}];
+
 const projectFactory = (title, date, priority, description, tasks) => {
     return {title, date, priority, description, tasks};
 }
@@ -14,13 +21,15 @@ function newProjectCreator () {
         let projectPriority = document.getElementById('priority').value;
         let projectDescription = document.getElementById('description').value;
         let projectTasks = [];
-        const taskCreator = newTaskPopup();
+        // const taskCreator = newTaskPopup();
 
-        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks, taskCreator);
+        let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks);
 
         projects.push(project);
         console.log(projects);
 
+        
 }
 
-export {newProjectCreator, projects}
+export {newProjectCreator};
+export {projects};
