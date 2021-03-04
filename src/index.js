@@ -9,6 +9,7 @@ import './style.css'
 
 renderLeyout();
 drawProjects();
+window['projects'] = projects;
 
 
 const plusBtn = document.querySelector('.plusBtn');
