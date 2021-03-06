@@ -7,8 +7,16 @@ let projects = [{
     date: '12/03/2021', 
     priority: 'Medium', 
     description: 'Stuff to do', 
-    tasks: ['Nothing for now']
-}];
+    tasks: ['Nothing for now', 'But soon something!']
+    },
+    {
+    title: 'Example2', 
+    date: '12/03/2021', 
+    priority: 'Medium', 
+    description: 'Stuff to do', 
+    tasks: ['Something to do', 'Alleluja']
+    }
+];
 
 const projectFactory = (title, date, priority, description, tasks) => {
     return {title, date, priority, description, tasks};
