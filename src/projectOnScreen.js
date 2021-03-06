@@ -1,6 +1,6 @@
 import {projects} from './newProjectCreator';
 import {newTaskPopup} from './newTaskPopup';
-import {listenerNewTask} from '.listeners';
+import {listenerNewTask} from './listeners';
 
 
 function drawProjects () {
@@ -67,7 +67,8 @@ function drawProjects () {
         
 
         projectsDiv.appendChild(proj);
-
+        
+        
     }
 
     const addTaskDiv = document.querySelectorAll('.addTask');
