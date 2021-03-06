@@ -1,5 +1,6 @@
 import {projects} from './newProjectCreator';
 import {newTaskPopup} from './newTaskPopup';
+import {listenerNewTask} from '.listeners';
 
 
 function drawProjects () {
@@ -48,7 +49,7 @@ function drawProjects () {
             for (let j = 0; j < projects[i].tasks.length; j++) {
                 let task = document.createElement('div');
                 task.className = 'task';
-                task.innerHTML = `${projects[i].tasks[j]}`;
+                task.innerHTML = `${projects[i].tasks[j]} Done?`;
                 projTasks.appendChild(task);
             }
 
