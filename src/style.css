@@ -26,6 +26,8 @@ body {
     cursor: pointer;
     font-size: 2em;
     font-weight: bold;
+    background-color: yellow;
+    padding: .5em;
 }
 
 
@@ -110,5 +112,13 @@ input, select {
 .project {
     border: 1px solid black;
     margin: 1em;
+    padding: .5em;
+}
+
+.addTaskDiv {
+    cursor: pointer;
+    background-color: yellow;
+    font-weight: bold;
+    width: max-content;
     padding: .5em;
 }

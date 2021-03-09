@@ -17,12 +17,6 @@ window['projects'] = projects;
 const plusBtn = document.querySelector('.plusBtn');
 
 
-
-
-
-
-
-
 // Listener for new Project
 plusBtn.addEventListener('click', () => {
     newProjectPopup()

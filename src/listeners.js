@@ -1,7 +1,9 @@
 // Listener for new Task in Projects
-const addTaskBtn = document.querySelectorAll('.addTaskDiv');
+
 
 function listenerNewTask () {
+    const addTaskBtn = document.querySelectorAll('.addTaskDiv');
+    
     addTaskBtn.forEach((item, index) => {
         item.addEventListener('click', () => {
             projects[index].tasks.push('1');

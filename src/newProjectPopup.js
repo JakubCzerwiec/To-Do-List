@@ -1,5 +1,6 @@
 import {newProjectCreator} from './newProjectCreator';
 import {drawProjects} from './projectOnScreen';
+import {listenerNewTask} from './listeners';
 
 
 function newProjectPopup () {
@@ -43,6 +44,7 @@ function newProjectPopup () {
         newProjectCreator();
         content.removeChild(projectPopup);
         drawProjects ();
+        
 
 
 });
