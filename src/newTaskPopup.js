@@ -41,7 +41,8 @@ function newTaskPopup () {
     const addNewTask = document.querySelector('.newTask');
     addNewTask.addEventListener('submit', (e) => {
         e.preventDefault();
-        newTaskCreator();
+        projects[index].tasks.push('1');
+        // newTaskCreator();
         content.removeChild(taskPopup);
         
 });
