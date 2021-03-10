@@ -9,8 +9,9 @@ import './style.css'
 
 
 renderLeyout();
-drawProjects();
 listenerNewTask();
+drawProjects();
+
 
 window['projects'] = projects;
 

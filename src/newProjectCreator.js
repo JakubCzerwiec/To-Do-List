@@ -1,7 +1,5 @@
 
-
-import {newTaskPopup} from './newTaskPopup';
-
+// Defining projects variable and some example projects
 let projects = [{
     title: 'Example', 
     date: '12/03/2021', 
@@ -18,10 +16,12 @@ let projects = [{
     }
 ];
 
+// Projects factory function
 const projectFactory = (title, date, priority, description, tasks) => {
     return {title, date, priority, description, tasks};
 }
 
+// Projects creator function
 function newProjectCreator () {
 
         let projectTitle = document.getElementById('title').value;
@@ -29,14 +29,12 @@ function newProjectCreator () {
         let projectPriority = document.getElementById('priority').value;
         let projectDescription = document.getElementById('description').value;
         let projectTasks = [];
-        // const taskCreator = newTaskPopup();
 
         let project = projectFactory(projectTitle, projectDate, projectPriority, projectDescription, projectTasks);
 
         projects.push(project);
         console.log(projects);
 
-        
 }
 
 export {newProjectCreator};
