@@ -2,8 +2,6 @@ import {drawProjects} from './projectOnScreen';
 
 
 // Listener for new Task in Projects
-
-
 function listenerNewTask () {
     const addTaskBtn = document.querySelectorAll('.addTaskDiv');
 
@@ -24,8 +22,6 @@ function listenerNewTask () {
         
                                             <input type="submit" id="addTask" value="Create New Task">
         
-        
-        
                                         </form>
                                     </div>`;
         
@@ -45,7 +41,6 @@ function listenerNewTask () {
                 drawProjects ();
             });
 
-            
             
         })
     })

@@ -2,11 +2,10 @@ import {newProjectCreator} from './newProjectCreator';
 import {drawProjects} from './projectOnScreen';
 import {listenerNewTask} from './listeners';
 
-
+// Project popup
 function newProjectPopup () {
     const content = document.getElementById('content');
 
-    
     const projectPopup = document.createElement('div');
     projectPopup.className = 'projectPopup';
     projectPopup.innerHTML = `<div class="newProjectPopup">
@@ -31,13 +30,12 @@ function newProjectPopup () {
 
                                     <input type="submit" id="add" value="Create New Project">
 
-
-
                                 </form>
                             </div>`;
 
     content.appendChild(projectPopup);
 
+    // Submit for new project
     const addNewProject = document.querySelector('.newProject');
     addNewProject.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -45,9 +43,7 @@ function newProjectPopup () {
         content.removeChild(projectPopup);
         drawProjects ();
         
-
-
-});
+    });
 
 }
 

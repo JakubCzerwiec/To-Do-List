@@ -1,8 +1,7 @@
 import {projects} from './newProjectCreator';
-import {newTaskPopup} from './newTaskPopup';
 import {listenerNewTask} from './listeners';
 
-
+// Project rendering on screen
 function drawProjects () {
     let projectsDiv = document.querySelector('.projects');
     projectsDiv.innerHTML = '';
@@ -46,6 +45,7 @@ function drawProjects () {
 
             projTasks.innerHTML = `<p>Tasks:</p>`;
 
+                // Iteration on task array
                 for (let j = 0; j < projects[i].tasks.length; j++) {
                     let task = document.createElement('div');
                     task.className = 'task';
@@ -63,30 +63,11 @@ function drawProjects () {
 
             proj.appendChild(addTaskDiv);
 
-
-        
-
         projectsDiv.appendChild(proj);
         
         
     }
-
-    const addTaskDiv = document.querySelectorAll('.addTask');
-
-   /* addTaskDiv.forEach(btn => {
-        btn.addEventListener('click', () => {
-            newTaskPopup()
-        })
-    })
-    */
-
-    addTaskDiv.forEach((btn, index) => {
-        btn.addEventListener('click', () => {
-            projects[index].taskCreator;
-        })
-    })
-
-
+    // Listener for task button
     listenerNewTask();
 
 }
