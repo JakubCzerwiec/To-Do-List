@@ -49,7 +49,7 @@ function drawProjects () {
                 for (let j = 0; j < projects[i].tasks.length; j++) {
                     let task = document.createElement('div');
                     task.className = 'task';
-                    task.innerHTML = `${projects[i].tasks[j]} Done?`;
+                    task.innerHTML = `${projects[i].tasks[j]} <input class="task__checkbox" type="checkbox"/> <div class="task__removeBtn"> X </div>`;
                     projTasks.appendChild(task);
                 }
 
@@ -88,7 +88,7 @@ function drawProjects () {
 
 
     listenerNewTask();
-    
+
 }
 
 export {drawProjects}
