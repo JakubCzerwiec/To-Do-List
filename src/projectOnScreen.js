@@ -1,5 +1,6 @@
 import {projects} from './newProjectCreator';
 import {listenerNewTask} from './listeners';
+import {listenerDeleteTask} from './listeners';
 
 // Project rendering on screen
 function drawProjects () {
@@ -69,7 +70,8 @@ function drawProjects () {
     }
     // Listener for task button
     listenerNewTask();
+    listenerDeleteTask ();
 
 }
 
-export {drawProjects}
+export {drawProjects};
