@@ -1,3 +1,4 @@
+import { projects } from './newProjectCreator';
 import {drawProjects} from './projectOnScreen';
 
 
@@ -47,4 +48,16 @@ function listenerNewTask () {
 }
 
 
-export {listenerNewTask}
+function listenerDeleteTask () {
+    const removeTask = document.querySelectorAll('.task__removeBtn');
+
+    removeTask.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            delete projects[index].tasks;
+        })
+    })
+}
+
+
+export {listenerNewTask};
+export {listenerDeleteTask};
